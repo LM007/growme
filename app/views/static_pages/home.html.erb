@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+<h1>Hello</h1>
+
+<% else %>
+
+<div class ="Center hero-unit">
+	<h1>Welcome to Grow.me</h1>
+	<h2>Your friends can  help you improve</h2>
+	<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary"%>
+	</div>
+<% end %>
+
